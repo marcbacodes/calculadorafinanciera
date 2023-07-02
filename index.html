@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Salud Financiera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Salud Financiera</h1>
+
+    <h2>Salario Neto Mensual:</h2>
+    <input type="number" id="salary" placeholder="Enter salary amount">
+
+    <h2>Gastos Mensuales:</h2>
+    <div id="cost-categories-container">
+        <div>
+            <label for="housing">Alquiler/Hipoteca:</label>
+            <input type="number" id="housing" class="cost-category" placeholder="Enter housing cost">
+        </div>
+        <div>
+            <label for="car">Coche:</label>
+            <input type="number" id="car" class="cost-category" placeholder="Enter car cost">
+        </div>
+        <div>
+            <label for="invoice">Facturas:</label>
+            <input type="number" id="invoice" class="cost-category" placeholder="Enter invoice cost">
+        </div>
+        <div>
+            <label for="food">Comida:</label>
+            <input type="number" id="food" class="cost-category" placeholder="Enter food cost">
+        </div>
+        <!-- Existing cost categories -->
+    </div>
+
+    <button id="add-category-button">+</button>
+
+    <h2>Costes Totales:</h2>
+    <input style="color: #ff0000" type="text" id="total-costs" readonly>
+
+    <h2>Ahorro Potencial Anual:</h2>
+    <input type="text" id="remaining" readonly>
+
+    <script src="Script1.js"></script>
+</body>
+</html>
